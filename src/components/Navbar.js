@@ -7,6 +7,7 @@ import {
 const Navbar = () => {
   let location= useLocation();
   useEffect(()=>{
+    // eslint-disable-next-line
     console.log(location.pathname);
   },[location]);
   return (
