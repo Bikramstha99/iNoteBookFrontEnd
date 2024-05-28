@@ -10,6 +10,7 @@ const AddNote = () => {
     const handleClick=(e)=>{
         e.preventDefault();
         addNote(note.title, note.description, note.tag);
+        
     }
     const onChange = (e) => {
         setNote({ ...note, [e.target.name]: e.target.value });
@@ -55,7 +56,7 @@ const AddNote = () => {
             </label>
           </div>
           <button type="submit" className="btn btn-primary" onClick={handleClick}>
-            Submit
+            AddNote
           </button>
         </form>
       </div>
